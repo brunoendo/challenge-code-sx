@@ -1,0 +1,236 @@
+$font-stack: 'Open Sans', sans-serif
+$primary-color: #333
+$green: #4AC5B1
+$white: #FFFFFF
+$dist: 1.0em
+$font-title-size: 30px
+$breakpoint: 850px
+$img-profile: url('./img/profile.png')
+$img-objective: url('./img/objective.png')
+$img-personal: url('./img/personal.png')
+$img-contact: url('./img/contact.png')
+$img-education: url('./img/education.png')
+$img-experience: url('./img/experience.png')
+$img-professional: url('./img/professional.png')
+$img-award: url('./img/award.png')
+$img-address: url('./img/address.png')
+$img-tel: url('./img/tel.png')
+$img-email: url('./img/email.png')
+$img-site: url('./img/site.png')
+
+*
+  margin: 0
+  padding: 0
+
+html
+  font-family: $font-stack
+
+.container
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+
+.col-left
+  width: 50%
+  height: auto
+  background: $green
+  color: $white
+  padding-bottom: $dist
+  
+.col-right
+  width: 50%
+  height: auto
+  background: $white
+  padding-bottom: $dist
+
+.box-left
+  width: 50%
+  float: right
+  color: $white
+  padding-right: 2/3*$dist
+  padding-top: 2*$dist
+  min-width: 400px
+
+.box-right
+  width: 50%
+  padding-top: 1.5*$dist
+  padding-left: 6/3*$dist
+  max-width: 500px
+  min-width: 400px
+
+@media screen and (max-width: $breakpoint)
+  .col-right,
+  .col-left
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+
+  .box-right,
+  .box-left
+    width: 95%
+    padding-left: 0.5*$dist
+    padding-right: 0.5*$dist
+    min-width: 300px
+    max-width: 500px
+    margin-left: auto
+    margin-right: auto
+    float: none
+
+
+.cover
+  text-align: center
+
+.education
+  margin-top: $dist
+
+.title-description
+  display: flex
+
+.title
+  display: flex
+  margin-left: $dist/2
+  margin-top: 2/5*$dist
+  padding-bottom: $dist/6
+  text-transform: uppercase
+  font-size: $font-title-size
+
+.col-right .title
+  color: #4AC5B1
+
+.description-info
+  display: flex
+  padding-left: $dist
+  font-size: 20px
+  margin-top: $dist/6
+
+.description
+  padding-left: $dist
+
+.description-skill
+  display: flex
+  padding-right: $dist
+  margin-top: $dist/2
+  margin-bottom: $dist/2
+
+.col-right .desctipiton-skill
+  color: #070707
+
+.value,
+.skill
+  width: 50%;
+  text-transform: uppercase
+  font-size: 20px
+
+.description-text
+  font-size: 18px
+
+.date
+  color: #646464
+  text-align: center
+
+.head
+  display: flex
+  margin-bottom: $dist
+
+.logo
+  width: 60px
+  height: 60px
+  -webkit-border-top-left-radius: 10px
+  -webkit-border-bottom-right-radius: 10px
+
+.profile .logo
+  background: $img-profile center center
+
+.objective .logo
+  background: $img-objective center center
+
+.personal-skill .logo
+  background: $img-personal center center
+
+.contact-me .logo
+  background: $img-contact center center
+
+.education .logo
+  background: $img-education center center
+
+.experience .logo
+  background: $img-experience center center
+
+.professional-skill .logo
+  background: $img-professional center center
+
+.award .logo
+  background: $img-award center center
+
+.photo
+  width: 170px
+  height: 170px
+  display: inline-block
+  -webkit-border-top-left-radius: 10px
+  -webkit-border-bottom-right-radius: 10px
+
+.name-profession h2
+  text-transform: uppercase
+
+.descri-title
+  font-size: $font-title-size/3
+  text-transform: uppercase
+  font-weight: bold
+  padding-bottom: $dist/3
+  color: #030303
+
+.descri-localization
+  font-size: $font-title-size/2.1
+
+.descri-description
+  color: #4A4A4A
+  padding-top: $dist/3
+  padding-bottom: $dist/3
+
+.title-description h3
+  font-weight: normal
+
+.information
+  font-size: 17px
+  padding-left: 4/3*$dist
+  display: flex
+
+.contact-img
+  width: 20px
+  height: 25px
+
+.address
+  background: $img-address center center
+
+.tel
+  background: $img-tel center center
+
+.email
+  background: $img-email center center
+
+.webSite
+  background: $img-site center center
+
+
+.value-container
+  width: 50%;
+  height: 15px;
+  margin-left: $dist
+  margin-top: $dist/3.57
+  background: $white
+
+.value
+  height: 15px
+  background: #A7A5A6
+
+.box-right .value-container
+  background: #A7A5A6
+
+.box-right .value
+  background: $green
+
+
+
+
+
+
